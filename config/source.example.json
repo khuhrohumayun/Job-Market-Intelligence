@@ -1,0 +1,15 @@
+{
+  "source_name": "approved_company_careers",
+  "start_url": "https://careers.example.com/jobs",
+  "approved": false,
+  "card": "article.job-card",
+  "title": "h2",
+  "company": ".company-name",
+  "link": "a.job-link",
+  "source_id_attribute": "data-job-id",
+  "description": ".description",
+  "location": ".location",
+  "salary": ".salary",
+  "posted": "time",
+  "next_page": "a[rel='next']"
+}

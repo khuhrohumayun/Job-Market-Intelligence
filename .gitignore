@@ -1,0 +1,78 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+job_market.db
+
+# Data outputs
+data/raw/*.json
+data/raw/synthetic*.jsonl
+data/raw/synthetic*.manifest.json
+data/processed/*.csv
+outputs/
+reports/
+work/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Logging
+*.log
+logs/
+
+# IDE cache
+.mypy_cache/
+dmypy.json
+.dmypy.json
+.pyre/
+
+# Streamlit
+streamlit/.cache/
+

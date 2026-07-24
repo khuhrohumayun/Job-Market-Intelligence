@@ -1,0 +1,1 @@
+Run `alembic revision --autogenerate -m "describe change"` after a schema change, review the generated migration, then run `alembic upgrade head`. The bootstrap script is retained for local sample-data convenience; production deployments should use Alembic migrations only.

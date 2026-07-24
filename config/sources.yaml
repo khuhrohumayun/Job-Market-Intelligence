@@ -1,0 +1,38 @@
+# This registry is an engineering control: no live scraper should run unless its
+# source is explicitly marked approved after a human terms/robots review.
+sources:
+  - name: synthetic_demo
+    base_url: "local://synthetic"
+    collection_method: generator
+    status: approved
+    terms_reviewed_on:
+    robots_reviewed_on:
+    requests_per_minute: 0
+    notes: "Synthetic records only. Never use for real-market conclusions."
+
+  - name: linkedin
+    base_url: "https://www.linkedin.com"
+    collection_method: official_api_or_written_permission
+    status: prohibited
+    terms_reviewed_on: "2026-07-24"
+    robots_reviewed_on:
+    requests_per_minute: 0
+    notes: "Do not scrape. Use only an approved official integration or written permission."
+
+  - name: indeed
+    base_url: "https://pk.indeed.com"
+    collection_method: official_api_partner_or_written_permission
+    status: review_required
+    terms_reviewed_on: "2026-07-24"
+    robots_reviewed_on:
+    requests_per_minute: 0
+    notes: "No automated collection until API/partner/written permission is confirmed."
+
+  - name: approved_company_careers_template
+    base_url: "https://careers.example.com"
+    collection_method: beautifulsoup
+    status: review_required
+    terms_reviewed_on:
+    robots_reviewed_on:
+    requests_per_minute: 10
+    notes: "Copy this entry only after written approval and robots review."
